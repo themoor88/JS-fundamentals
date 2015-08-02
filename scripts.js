@@ -129,3 +129,34 @@ function giveMatches(farm) {
 
 giveMatches(myFarm);
 console.log(myFarm[0]);
+
+// Exercise 4
+var friends = [];
+friends.push(animals[0].username, animals[1].username);
+
+console.log(friends);
+
+var relationships = {};
+
+relationships.friends = friends;
+
+console.log(relationships);
+
+console.log(Object.keys(relationships).length);
+
+var matches = [];
+relationships.matches = matches;
+relationships.matches.push('pig');
+console.log(relationships);
+
+for (var i = 0; i < animals.length; i++) {
+  animals[i].relationships = relationships;
+}
+
+console.log(animals);
+
+
+
+
+
+
