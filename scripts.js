@@ -83,7 +83,7 @@ console.log(testSheep);
 function AnimalCreator(username, species, tagline, noises) {
   return {
     username: username,
-    species: speecies,
+    species: species,
     tagline: tagline,
     noises: noises,
     friends: []
@@ -118,7 +118,7 @@ function addMatchesArray(farm) {
   }
 }
 
-addMatchesArray(myfarm);
+addMatchesArray(myFarm);
 console.log(myFarm[0]);
 
 function giveMatches(farm) {
